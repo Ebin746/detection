@@ -1,12 +1,13 @@
 body {
     font-family: helvetica, arial, sans-serif;
     margin: 2em;
-    color: #3D3D3D;
+    color:white;
+    background-color: #0d0b0a;
   }
   
   h1 {
     font-style: italic;
-    color: #FF6F00;
+    color: #0d0b0a;
   }
   
   
@@ -25,7 +26,7 @@ body {
     border-color: red;
   }
   
-  
+  /* not change  */
   #imageContainer {
     position: relative;
     width: 100%;
@@ -40,35 +41,100 @@ body {
     height: 500px;
     object-fit: cover; 
   }
+  /* till here */
+  .information {
+    margin-top: 2em;
+    padding: 2em; /* Increased padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #fff, #f5f5f5);
+    border-radius: 8px;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
   
+  .information h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #020308; /*  Darker blue for heading */
+  }
   
-.information {
-  margin-top: 2em;
-  padding: 1em;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-}
-
-.information h2 {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  color: #333;
-}
-
-.information p {
-  margin-bottom: 1em;
-}
-
-
-#resultsList {
-  list-style-type: none;
-  padding: 0;
-}
-
-.resultItem {
-  margin-bottom: 0.5em;
-  padding: 0.5em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-}
+  .information p {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    color: #020308;
+    /* Darker gray for paragraph */
+  }
+  
+  #resultsList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resultItem {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .resultItem:hover {
+    background-color: #eee; /* Lighter background on hover */
+    border-color: #bbb; /* Slightly darker border on hover */
+  }
+  
+  /* header */
+  header {
+    color: white;
+    background-color:black; /* Light gray background */
+    padding: 15px 0; /* Top and bottom padding */
+    box-shadow: 0 1px 3px rgb(0, 0, 0); /* Subtle shadow for depth */
+  }
+  
+  .container {
+    display: flex; /* Arrange elements horizontally */
+    justify-content:space-between; /* Distribute elements evenly */
+    align-items: center; /* Align vertically */
+    width: 80%;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  h1 {
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    color: white; /* Dark gray text color */
+  }
+  
+  nav {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  nav li {
+    display: inline-block; /* Display navigation items side-by-side */
+    margin-right: 20px; /* Add space between links */
+  }
+  
+  /* Hover effects for navigation links */
+  nav a {
+    text-decoration: none; /* Remove underline from links */
+    color:rgba(255, 255, 255, 0.826); /* Dark gray text color */
+    font-weight: lighter; /* Slightly lighter weight for links */
+    transition: color 0.2s ease-in-out; /* Smooth transition effect */
+  }
+  
+  nav a:hover {
+    color: #ab9292; /* Black on hover */
+    /* Add additional hover effects here (optional) */
+  }
+  

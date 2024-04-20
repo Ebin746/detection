@@ -75,10 +75,24 @@ function displayResults(predictions) {
 
   predictions.forEach(prediction => {
     const details = document.createElement('p');
-    details.textContent = `${prediction.class} - Confidence: ${Math.round(prediction.score * 100)}%`;
+    
+    // console.log(`Detected ${prediction.class} with confidence ${Math.round(prediction.score * 100)}%`);
+
+if(prediction.class==='person')
+{
+  details.textContent = `${prediction.class} `;
+  resultContainer.appendChild(details);
+  resultList.appendChild(details);
+    console.log(`Detected person with confidence `);
+}
+else if(prediction.class === 'chair' || prediction.class === 'bench' || prediction.class === 'bed'|| prediction.class === 'couch'){
+  details.textContent = `Seats detected `;
+  console.log(`Detected seat with confidence `);
+}
+
+
     resultContainer.appendChild(details);
     resultList.appendChild(details);
-    console.log(`Detected ${prediction.class} with confidence ${Math.round(prediction.score * 100)}%`);
   });
 }
 

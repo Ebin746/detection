@@ -7,3 +7,13 @@
 Secondary: Light Blue (#E0F2FE)
 Accent: White (#FFFFFF)
 background-color: #09549f; /* Navy blue header */
+
+
+
+if(prediction.class==='person')
+    {
+        console.log(`Detected person with confidence ${Math.round(prediction.score * 100)}%`);
+    }
+   else if(prediction.class === 'chair' || prediction.class === 'bench' || prediction.class === 'bed'|| prediction.class === 'couch'){
+        console.log(`Detected seat with confidence ${Math.round(prediction.score * 100)}%`);
+    }

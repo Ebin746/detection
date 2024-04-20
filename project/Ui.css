@@ -84,7 +84,7 @@ body {
   }
   
   .container {
-    border: 1px solid #ddd; /* Adds a subtle border to the container */
+    border: 1px solid black; /* Adds a subtle border to the container */
     border-radius: 5px; /* Creates rounded corners for the container */
   }
   
@@ -133,8 +133,8 @@ left: 600px;
 }
 .bgImg img{
 object-fit: cover;
-width: 1400px;
-height: 600px;
+width: 1600px;
+height: 670px;
 }
 
 
@@ -178,7 +178,7 @@ height: 600px;
   }
   
   .box-p  {
-    
+    width: 200px;
     line-height: 1.5;
     font-size: 1rem; /* Adjust font size */
     color: #fffcfc; /* Light gray text color */
@@ -189,6 +189,7 @@ height: 600px;
     text-decoration: underline; /* Underline on hover */
     transform: scale(1.1); /* Scale up on hover */
     transition: transform 0.4s ease-in-out, color 0.2s ease-in-out; /* Smooth transitions */
+    
   }
 
  
