@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEAT DETECTION</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seat Detection</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>seat detection</h1>
+  <h1>Seat Detection</h1>
+  <input type="file" id="imageInput" accept="image/*">
+  <button id="detectButton">Detect Seat</button>
+  <div id="imageContainer">
+    <img id="displayedImage" src="" alt="Prompted Image">
+    
+  </div>
+  <div class="information">
+    <h2>Instructions</h2>
+    <p>Select an image and click "Detect Seat" to analyze it for available seats.</p>
+    <h2>Results</h2>
+    <div id="resultsList">
+ 
+    </div>
+  </div>
+  
 </body>
 </html>
