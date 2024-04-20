@@ -1,0 +1,74 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    color: #3D3D3D;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #FF6F00;
+  }
+  
+  
+  .highlighter {
+    position: absolute;
+    border: 4px solid;
+    pointer-events: none; 
+    box-sizing: border-box; 
+  }
+  
+  .green {
+    border-color: green;
+  }
+  
+  .red {
+    border-color: red;
+  }
+  
+  
+  #imageContainer {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    max-height: 600px;
+    max-width: 600px; 
+    margin: auto;
+  }
+  
+  #displayedImage {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; 
+  }
+  
+  
+.information {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.information h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.information p {
+  margin-bottom: 1em;
+}
+
+
+#resultsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resultItem {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
