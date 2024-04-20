@@ -1,4 +1,5 @@
 let model;
+let personCount=0;;
 //change to required images only
 
 const imageInput = document.getElementById('imageInput');
@@ -79,14 +80,30 @@ function displayResults(predictions) {
     // console.log(`Detected ${prediction.class} with confidence ${Math.round(prediction.score * 100)}%`);
 
 if(prediction.class==='person')
-{
+{personCount++;
   details.textContent = `${prediction.class} `;
   resultContainer.appendChild(details);
   resultList.appendChild(details);
     console.log(`Detected person with confidence `);
 }
 else if(prediction.class === 'chair' || prediction.class === 'bench' || prediction.class === 'bed'|| prediction.class === 'couch'){
-  details.textContent = `Seats detected `;
+  // details.textContent = ``;
+  if(prediction.class==='chair'){
+    details.textContent=`VACANT SPACE`;
+    details.style.color = "red";
+  }
+  else if(prediction.class==='bench'){
+details.textContent=`VACANT SPACE`
+details.style.color = "red";
+  }
+  else if(prediction.class !== 'chair' || prediction.class !== 'bench' || prediction.class !== 'bed'|| prediction.class !== 'couch'){
+    details.textContent=`SEAT ALREDY OCCUPIED`
+    details.style.color = "red";
+  }
+  else{
+    details.textContent===`VACANT SPACE`
+    details.style.color = "red";
+  }
   console.log(`Detected seat with confidence `);
 }
 

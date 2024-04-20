@@ -88,6 +88,7 @@ body {
   
   /* header */
   header {
+    text-align: center;
     color: white;
     background-color:black; /* Light gray background */
     padding: 15px 0; /* Top and bottom padding */
@@ -138,3 +139,36 @@ body {
     /* Add additional hover effects here (optional) */
   }
   
+  /* input image section  */
+  /* Image input styling */
+
+
+/* Label for image input */
+#imageInput {
+  background-color: #ab9292;; /* Light gray background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out; /* Smooth background color change on hover */
+}
+
+#imageInput:hover {
+  background-color:  #1c030342; /* Slightly darker background on hover */
+}
+/* Styling when a file is selected (optional) */
+
+#detectButton {
+  background-color: #ab9292; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px; /* Add some margin from image input */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out; /* Smooth background color change on hover */
+}
+
+#detectButton:hover {
+  background-color:  #1c030342;
+}

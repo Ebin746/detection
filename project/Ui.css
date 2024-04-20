@@ -163,7 +163,7 @@ height: 670px;
     margin-bottom: 10px;
     width: 200px; /* Adjust width as needed */
     border-radius: 5%;
-    color: #ffffff; /* Dark gray text color */
+    color:white /* Dark gray text color */
   }
   
   .feature-box h3:hover {
@@ -178,10 +178,10 @@ height: 670px;
   }
   
   .box-p  {
-    width: 200px;
+    width: 300px;
     line-height: 1.5;
-    font-size: 1rem; /* Adjust font size */
-    color: #fffcfc; /* Light gray text color */
+    font-size: 1.5rem; /* Adjust font size */
+    color:white; /* Light gray text color */
   }
   
   .box-p:hover {
