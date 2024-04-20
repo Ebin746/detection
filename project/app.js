@@ -1,5 +1,6 @@
 let model;
-let diplayAgian;
+//change to required images only
+
 const imageInput = document.getElementById('imageInput');
 const detectButton = document.getElementById('detectButton');
 const resultContainer = document.getElementById('resultContainer');
