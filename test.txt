@@ -1,0 +1,9 @@
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+
+
+  Primary: Navy Blue (#001F3F)
+Secondary: Light Blue (#E0F2FE)
+Accent: White (#FFFFFF)
+background-color: #09549f; /* Navy blue header */
