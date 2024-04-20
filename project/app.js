@@ -1,4 +1,5 @@
 let model;
+let diplayAgian;
 const imageInput = document.getElementById('imageInput');
 const detectButton = document.getElementById('detectButton');
 const resultContainer = document.getElementById('resultContainer');
