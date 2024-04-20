@@ -38,6 +38,7 @@ function detectObjects(image) {
   });
 }
 
+
 function displayResults(predictions) {
   resultContainer.innerHTML = '';
   resultList.innerHTML="";
