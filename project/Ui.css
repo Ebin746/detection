@@ -95,7 +95,9 @@ body {
   nav a:hover {
     transform: scale(1.2); /* Adjust scale factor as needed */
     transition: transform 0.4s ease-in-out;
-    background-color: #3491dd;
+    color: #ffa8a8; /* Dark gray color on hover */
+    text-decoration: underline; /* Underline on hover */
+  
     border-radius: 20%;
   }
   
@@ -143,48 +145,51 @@ height: 600px;
     width: 80%; /* Reduce width to prevent overflowing the container */
     margin: 0 auto; /* Center the boxes horizontally */
   }
-  
+ 
   .feature-box {
-    width: 45%; 
-    border-radius: 5px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
+    width: 45%; /* Adjust width as needed */
+    border-radius: 5px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    padding: 20px; /* Added padding */
   }
-
+  
   .feature-box h3 {
     font-weight: bold;
- 
-    margin-bottom:-100px; 
-    width: 200px;
-    border-radius: 5%;
-  }
-  
-  .feature-box p {
-    width: 100px;
-    line-height: 1.5; 
-   
-    border-radius: 10%;
-  }
-  .feature-box h3:hover {  /* Target h3 element on hover */
-    font-weight: bold;
-    background-color: rgb(219, 87, 87); /* Maintain background color */
-    margin-bottom: 10px; 
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 10px;
     width: 200px; /* Adjust width as needed */
     border-radius: 5%;
-    transform: scale(1.1); /* Add hover effect: scale up by 10% */
-    transition: transform 0.4s ease-in-out; /* Smooth transition */
+    color: #ffffff; /* Dark gray text color */
   }
   
-  .feature-box p:hover {  /* Target p element on hover */
-    width: 100px;
-    line-height: 1.5; 
-    background-color: white; /* Maintain background color */
-    border-radius: 10%;
-    transform: scale(1.1); /* Add hover effect: scale up by 10% */
-    transition: transform 0.4s ease-in-out; /* Smooth transition */
+  .feature-box h3:hover {
+    font-weight: bold;
+    color: #f79d9d; /* White color on hover */
+    margin-bottom: 10px;
+    text-decoration: underline;
+    width: 200px; /* Adjust width as needed */
+    border-radius: 5%;
+    transform: scale(1.1); /* Scale up on hover */
+    transition: transform 0.4s ease-in-out, color 0.2s ease-in-out; /* Smooth transitions */
   }
+  
+  .box-p  {
+    
+    line-height: 1.5;
+    font-size: 1rem; /* Adjust font size */
+    color: #fffcfc; /* Light gray text color */
+  }
+  
+  .box-p:hover {
+    color: #ffa8a8; /* Dark gray color on hover */
+    text-decoration: underline; /* Underline on hover */
+    transform: scale(1.1); /* Scale up on hover */
+    transition: transform 0.4s ease-in-out, color 0.2s ease-in-out; /* Smooth transitions */
+  }
+
+ 
+ 
