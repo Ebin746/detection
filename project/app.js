@@ -92,7 +92,7 @@ else if(prediction.class === 'chair' || prediction.class === 'bench' || predicti
     details.textContent=`VACANT SPACE`;
     details.style.color = "red";
   }
-  else if(prediction.class==='bench'){
+  else if(prediction.class==='bench' ||prediction.class !== 'bed'|| prediction.class !== 'couch'){
 details.textContent=`VACANT SPACE`
 details.style.color = "red";
   }

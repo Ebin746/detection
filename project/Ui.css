@@ -23,8 +23,9 @@ body {
     display: flex; /* Arrange elements horizontally */
     justify-content:space-between; /* Distribute elements evenly */
     align-items: center; /* Align vertically */
-    width: 80%;
-    margin: 0 auto; /* Center the container horizontally */
+    width: 100%;
+    margin:10px;
+    /* Center the container horizontally */
   }
   
   h1 {
@@ -133,7 +134,7 @@ left: 600px;
 }
 .bgImg img{
 object-fit: cover;
-width: 1600px;
+width: 1500px;
 height: 670px;
 }
 
@@ -168,7 +169,7 @@ height: 670px;
   
   .feature-box h3:hover {
     font-weight: bold;
-    color: #f79d9d; /* White color on hover */
+    color: #050303; /* White color on hover */
     margin-bottom: 10px;
     text-decoration: underline;
     width: 200px; /* Adjust width as needed */
@@ -185,7 +186,7 @@ height: 670px;
   }
   
   .box-p:hover {
-    color: #ffa8a8; /* Dark gray color on hover */
+    color: #000000; /* Dark gray color on hover */
     text-decoration: underline; /* Underline on hover */
     transform: scale(1.1); /* Scale up on hover */
     transition: transform 0.4s ease-in-out, color 0.2s ease-in-out; /* Smooth transitions */
